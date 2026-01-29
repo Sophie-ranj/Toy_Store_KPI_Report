@@ -33,6 +33,6 @@ A Power BI report built on the **Maven Toys** dataset to analyze sales performan
 - Lowest order category: **Electronics** (improvement opportunity)
 
 ## Author
-**Sophie Ranj** — ranj.sophie@outlook.com  
+**Sophie Ranj** ranj.sophie@outlook.com  
 LinkedIn: <a href="https://linkedin.com/in/sophie-ranj" target="_blank" rel="noopener noreferrer">linkedin.com/in/sophie-ranj</a>  
 Portfolio: <a href="https://sophie-ranj.github.io/" target="_blank" rel="noopener noreferrer">sophie-ranj.github.io</a>
