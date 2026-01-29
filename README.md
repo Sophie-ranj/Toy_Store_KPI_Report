@@ -5,10 +5,6 @@ A Power BI report built on the **Maven Toys** dataset to analyze sales performan
 ---
 <img src="images/ToyStore.png" alt="Dashboard preview" width="800">
 
-# Maven Toys Sales Dashboard (Power BI)
-
-Power BI dashboard built on the **Maven Toys** dataset to track **Total Orders, Total Revenue, and Total Profit** across time, product categories, and store locations.
-
 ## Dataset, Data Validation & Data Modeling
 - Built from four CSV tables: **sales** (fact), **products**, **stores**, **calendar** (dimensions)
 - Reviewed columns, checked **blank/null values**, confirmed **data types**, and identified **primary/foreign keys**
