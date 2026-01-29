@@ -5,76 +5,38 @@ A Power BI report built on the **Maven Toys** dataset to analyze sales performan
 ---
 <img src="images/ToyStore.png" alt="Dashboard preview" width="800">
 
-## 📦 Dataset
-The report is built from four CSV tables:
-- **sales** (fact table)
-- **products** (dimension)
-- **stores** (dimension)
-- **calendar** (dimension)
+# Maven Toys Sales Dashboard (Power BI)
 
-### Data validation & exploration
-Before modeling, I:
-- Reviewed columns and checked for **blank/null values**
-- Confirmed **data types** were correctly defined
-- Identified **primary/foreign keys**
-- Performed quick exploratory checks:
-  - Number of **transactions**
-  - Number of **stores**
-  - **Lowest and highest** product prices
+Power BI dashboard built on the **Maven Toys** dataset to track **Total Orders, Total Revenue, and Total Profit** across time, product categories, and store locations.
 
----
+## Dataset, Data Validation & Data Modeling
+- Built from four CSV tables: **sales** (fact), **products**, **stores**, **calendar** (dimensions)
+- Reviewed columns, checked **blank/null values**, confirmed **data types**, and identified **primary/foreign keys**
+- Performed quick exploration: **transaction count**, **store count**, and **min/max product price**
+- Created a **star schema** with **1:many** relationships from **sales → products/stores/calendar**
+- Hid foreign keys in `sales` from report view for a cleaner field list
+- Enhanced `calendar` with **Start of Month** and **Start of Week**, and created a **date hierarchy** (Start of Month → Start of Week → Date)
 
-## 🧱 Data Modeling (Star Schema)
-Tables were loaded into the model and connected in a **star schema**:
-- **1:Many** relationships from **sales → products / stores / calendar**
-- Followed data modeling best practices (fact at the center, dimensions around it)
-- **Hidden foreign keys** in the `sales` table from the report view for a cleaner field list
+## Calculations
+- Created calculated columns to bring **Cost** and **Price** into `sales`, then calculated **Revenue** and **Profit** per transaction
+- Built measures: **Total Orders**, **Total Revenue**, **Total Profit**
+- Bonus: Defined Revenue/Profit measures without referencing calculated columns
 
----
+## Report Visuals
+- KPI cards for current month (**Orders, Revenue, Profit**) with monthly trends
+- Store location slicer
+- Bar chart: **Total Orders by Product Category**
+- Line chart: **Total Revenue over time** using the date hierarchy
+- Final layout polished for readability and alignment
 
-## 🗓️ Calendar Enhancements
-Added calculated columns in the **calendar** table:
-- **Start of Month**
-- **Start of Week**
+## 🔎 Key Findings
+- **41,830** orders (current month)
+- **$658,194** revenue; **$179,923** profit (~**27%** margin)
+- Revenue trend: **growth → peaks (~$800K) → recent dip**
+- Top order categories: **Toys**, **Art & Crafts**, **Games**
+- Lowest order category: **Electronics** (improvement opportunity)
 
-Created a **date hierarchy** using:
-- `Start of Month` → `Start of Week` → `Date`
-
----
-
-## 💰 Calculations
-### Calculated columns (sales)
-- Pulled **Cost** and **Price** from `products` into `sales`
-- Calculated:
-  - **Revenue** per transaction
-  - **Profit** per transaction
-
-### Measures
-Created measures for:
-- **Total Orders** (count of orders)
-- **Total Revenue** (sum of revenue)
-- **Total Profit** (sum of profit)
-
-✅ **Bonus:** Built Revenue/Profit measures without referencing calculated columns (measure-driven approach).
-
----
-
-## 📊 Report Visuals & Features
-The final report includes:
-- **KPI cards** for the **current month**:
-  - Total Orders, Total Revenue, Total Profit  
-  - with **monthly trends** for each KPI
-- **Slicer** to filter by **store location**
-- **Bar chart:** Total Orders by **product category**
-- **Line chart:** Total Revenue over time using the **date hierarchy**
-- Polished layout with improved formatting, alignment, and readability
-
-
-
-
-
-## 👩‍💻 Author
-**Sophie Ranj**  
-📫 Email: ranj.sophie@outlook.com  
-🔗 LinkedIn: <a href="https://linkedin.com/in/sophie-ranj" target="_blank" rel="noopener noreferrer">linkedin.com/in/sophie-ranj</a>  
-🌐 Portfolio: <a href="https://sophie-ranj.github.io/" target="_blank" rel="noopener noreferrer">https://sophie-ranj.github.io/</a>
+## Author
+**Sophie Ranj** — ranj.sophie@outlook.com  
+LinkedIn: <a href="https://linkedin.com/in/sophie-ranj" target="_blank" rel="noopener noreferrer">linkedin.com/in/sophie-ranj</a>  
+Portfolio: <a href="https://sophie-ranj.github.io/" target="_blank" rel="noopener noreferrer">sophie-ranj.github.io</a>
