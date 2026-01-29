@@ -68,31 +68,12 @@ The final report includes:
 - **Line chart:** Total Revenue over time using the **date hierarchy**
 - Polished layout with improved formatting, alignment, and readability
 
----
 
-## 🧭 How to Use
-1. Use the **Store Location slicer** to filter performance by location  
-2. Review the KPI cards to understand the **current month** results  
-3. Explore category performance via the **Orders by Category** chart  
-4. Analyze trends using **Revenue over Time** (month/week/day drill)
 
----
 
-## 📁 Files in this Repository
-- `MavenToys_Report.pbix` *(Power BI report file)*
-- `/data/` *(optional: CSV files, if included)*
-- `/images/` *(optional: report screenshots for quick preview)*
-
----
-
-## 🔎 Notes
-- This project demonstrates end-to-end workflow: **data review → modeling → DAX/measures → dashboard design**
-- Built with Power BI using a **star schema** for scalable reporting
-
----
 
 ## 👩‍💻 Author
 **Sophie Ranj**  
-📫 Email: sophie.ranj@outlook.com  
+📫 Email: ranj.sophie@outlook.com  
 🔗 LinkedIn: <a href="https://linkedin.com/in/sophie-ranj" target="_blank" rel="noopener noreferrer">linkedin.com/in/sophie-ranj</a>  
 🌐 Portfolio: <a href="https://sophie-ranj.github.io/" target="_blank" rel="noopener noreferrer">https://sophie-ranj.github.io/</a>
