@@ -5,6 +5,12 @@ A Power BI report built on the **Maven Toys** dataset to analyze sales performan
 ---
 <img src="images/ToyStore.png" alt="Dashboard preview" width="800">
 
+
+
+## ⬇️ Download
+- <a href="./Toy%20Store.pbix?raw=1" target="_blank" rel="noopener noreferrer">Download the PBIX (Toy Store)</a>
+
+---
 ## Dataset, Data Validation & Data Modeling
 - Built from four CSV tables: **sales** (fact), **products**, **stores**, **calendar** (dimensions)
 - Reviewed columns, checked **blank/null values**, confirmed **data types**, and identified **primary/foreign keys**
